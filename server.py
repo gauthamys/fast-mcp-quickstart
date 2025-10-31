@@ -2,7 +2,7 @@ from fastmcp import FastMCP
 
 app = FastMCP(name="My FastMCP Server")
 
-@app.resouce("/hello")
+@app.resource("/hello")
 async def hello(request):
     return {"message": "Hello, FastMCP!"}
 
