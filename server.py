@@ -11,5 +11,4 @@ async def echo(request):
 async def test(request):
     return {"status": "Test tool is working!"}
 
-if __name__ == "__main__":
-    app.run()
+app = app.http_app(path="/api/mcp/")
